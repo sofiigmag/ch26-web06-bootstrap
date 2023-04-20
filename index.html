@@ -10,7 +10,9 @@
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
-    />
+      />
+      <!-- Bootstrap icons CDN -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
@@ -83,40 +85,58 @@
                 <h3>Encantadora de gatos</h3>
             </div>
         <div class="col-12 col-md-6">
-            <h3>Dealer de jugos en Berghain</h3>
+            <h3>Cadenera de Berghain</h3>
         </div>
         </div>
     </div>
     <!-- Carrusel -->
     <!-- desde acá arriba todo el contenido del carrusel va alineado al centro -->
-    <div class="container mt-4 text-center">
+    <div class="container my-4 text-center">
         <div class="row justify-content-center">
             <!-- Carrusel -->
             <div class="col-9 mb-2">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div 
+                id="carouselExample" 
+                class="carousel slide" 
+                data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./assets/img/pexels-pixabay-57416.jpg" class="d-block w-100 rounded" alt="gatito">
+                    <img 
+                    src="./assets/img/pexels-pixabay-57416.jpg" 
+                    class="d-block w-100 rounded" 
+                    alt="gatito acostado"/>
                   </div>
                   <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./assets/img/pexels-anel-rossouw-2558605.jpg" class="d-block w-100 rounded" alt="gato lavandose">
+                    <img src="./assets/img/pexels-anel-rossouw-2558605.jpg" 
+                    class="d-block w-100 rounded" 
+                    alt="gato lavándose"/>
                   </div>
                   <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./assets/img/ninja03.jpg" class="d-block w-100 rounded" alt="ninja">
+                    <img src="./assets/img/ninja03.jpg" 
+                    class="d-block w-100 rounded" 
+                    alt="ninja"/>
                   </div>
                   <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./assets/img/ninja02.jpg" class="d-block w-100 rounded" alt="ninja dos">
+                    <img src="./assets/img/ninja02.jpg" 
+                    class="d-block w-100 rounded" 
+                    alt="ninja dos"/>
                   </div>
-                </div>
             </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev" 
+                type="button" 
+                data-bs-target="#carouselExample" 
+                data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" 
+                  aria-hidden="true"
+                  ></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
+           </div>
         </div>
         <!-- descripción carrusel -->
         <div class="col-12 col-lg-3">
@@ -137,8 +157,9 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- Ondas SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#212529" fill-opacity="1" d="M0,288L48,266.7C96,245,192,203,288,202.7C384,203,480,245,576,266.7C672,288,768,288,864,250.7C960,213,1056,139,1152,133.3C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
       </svg>
     <script
@@ -146,6 +167,5 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   </body>
 </html>
