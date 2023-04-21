@@ -190,19 +190,32 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-5 text-center">
-                <p id="name"> Mi nombre</p>
-                <p onclick="changeColorToRed()">Cambiar el color a rojo</p>
+                <h3 id="fullname" class="text-color"> Mi nombre</h3>
               </div>
             </div>
             <!-- Botones cambia el color -->
-            <div class="row">
+            <div class="row mb-4">
               <div class="col">
-                <button onclick="changeColorToRed()" type="button" class="btn btn-danger">Rojo</button>
+                <button onclick="changeColorTo('red')" type="button" class="btn btn-danger">Rojo</button>
               </div>
-              <div class="col
-              div>
               <div class="col">
-
+                <button onclick="changeColorTo('blue')"type="button" class="btn btn-info">Azul</button>
+              </div>
+              <div class="col">
+                <button onclick="changeColorTo('green')" type="button" class="btn btn-success">Verde</button>
+              </div>
+            </div>
+          </div>
+          <!-- Cambia el color sin botón  -->
+          <div class="container">
+            <div class="row">
+              <div class="col"><p class="text-color" onclick="changeColorParagraph('green', this)">Me cambiaré a verde</p></div>
+              <div class="col"><p class="text-color" onclick="changeColorParagraph('blue', this)">Me cambiaré a azul</p></div>
+              <div class="col"><p class="text-color" onclick="changeColorParagraph('yellow', this)">Me cambiaré a amarillo</p></div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <button type="button" onclick="resetColors()" class="btn btn-dark">Reset</button>
               </div>
             </div>
           </div>
@@ -269,7 +282,7 @@
     ></script>
     <!-- Script cambia el nombre -->
     <script>
-      const refName = document.getElementById("name");
+      const refName = document.getElementById("fullname");
       console.log(refName);
       refName.innerHTML= "Sofía <strong>Gómez</strong>";
     </script>
